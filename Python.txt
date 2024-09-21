@@ -1,0 +1,249 @@
+Python : 
+
+~LIST : ~
+
+* Group Of Element Is Allowed
+* Indexing Element Is Allowed
+* Duplicate Is Allowed
+
+~TUPLE : ~
+
+* Group Of Element Is Allowed
+* Indexing Element Is Allowed
+* Duplicate Is Allowed
+
+~SET : ~
+
+* Group Of Element Is Allowed
+
+~DICT : ~
+
+* Group Of Key Value Pair As Are Entity
+* Group Of Properties : * Property Name & Value
+* Duplicate  Key Are Not Allowed ; But Values Are Allowed 
+* Indexing Concept Is Not Applicable
+* Mutable Object
+
+~DICT :~
+
+*Create :
+	* d1.copy() -->Method
+	* dict() -->Function
+
+*Read :
+
+	* d1.get(key)
+	* d1.keys()
+	* d1.values()
+	* d1..items()
+
+*Update :
+
+	* d1.update(d2)
+	* d1.setDefault()
+
+*Delete :
+
+	* d1.pop(key)
+	* d1.popitem()
+	* d1.clear()
+
+~Python Functions:~
+
+Function ---------------->Inbuilt Function--------------->Argument Type------------>Inner Function & Recur file------------------->Lambda Function -->[1. Map 2. Filter] ------------------>Decorator
+
+
+~NameLess Function:~
+
+*Lambda Function Or Lambda Expression :
+	* No Function
+	* No def Keyword
+	* No Return Keyword
+
+
+
+What Is Decorator ? -->@<Function Name>
+Decorator Is A Function . It's Take Function As A Arguments . And It Modify The Functionality Return The Modified Function .
+
+dir --> To Display List Of Elements
+
+
+Python Module 	| Python Function	|
+Inbuild Module :|Print()		|
+	Math	|Id()			|
+	Random	|Type()			|
+	Csv	|Input()		|
+	Json	|DataType:		|
+	Os	|	Int		|
+User Defined	|	Float		|
+Module :	|	String		|
+		|	Boolean		|
+		|	Complex		|
+		|	List		|
+		|	Tuple		|
+		|	Set		|
+		|	Dict		|
+		|	Bytes		|
+		|	Bytearray	|
+		|	Range		|
+		|	FrozenSet	|
+		|Hex()-->Hexadecimal	|
+		|Oct()-->Octal		|
+		|Bin()-->Binary		|
+		|Sorted()		|
+		|Map()			|
+		|FIlter()		|
+		|Eval()-->Evaluate	|
+		|Len()-->Length		|
+		|Inner()		|
+		|Min()			|
+		|Max()			|
+
+
+
+from module import member1,member2,member3 (member1,member2,member3 --> With In The Bracket Are Called As Alias Name)
+from module import *
+from module import members1 as m1 (m1 --> Are Aias Number)
+
+
+Text Files : 
+	.txt
+	.csv
+	.json
+	.xls
+	.pdf
+
+Text Files Mode :
+
+	r   : Read Mode (r): Opens a file for reading. The file pointer is placed at the beginning of the file. This is the default mode.
+
+
+	r+  : Read and Write Mode (r+): Opens a file for both reading and writing. The file pointer is placed at the beginning of the file.
+
+
+	w   : Write Mode (w): Opens a file for writing. If the file exists, it truncates (clears) the file before writing. If the file doesn’t exist, it creates a new file.
+
+
+	w+  : Write and Read Mode (w+): Opens a file for both writing and reading. It truncates the file if it exists, or creates a new file if it doesn’t. 
+
+
+	a   : Append Mode (a): Opens a file for appending. The file pointer is at the end of the file if it exists. If the file doesn’t exist, it creates a new file.
+
+
+	a+   : Append and Read Mode (a+): Opens a file for both appending and reading. The file pointer is at the end of the file if it exists, or creates a new file if it doesn’t.
+
+
+Binary Files :
+	.jpg
+	.jpeg
+	.mp4
+	.mp3
+	.mkv
+
+
+Binary File Modes :
+
+	rb  : (read binary): Opens a file for reading in binary format.
+
+	rb+ : (read and write binary): Opens a file for both reading and writing in binary format.
+
+	wb  :  (write binary): Opens a file for writing in binary format. If the file already exists, it will be truncated.
+
+	wb+ : (write and read binary): Opens a file for both writing and reading in binary format. If the file already exists, it will be truncated.
+
+	ab  : (append binary): Opens a file for appending in binary format. Data is added to the end of the file.
+
+	ab+ :  (append and read binary): Opens a file for both appending and reading in binary format.
+
+	xb  : 
+
+
+
+In Python Must Use Single Codes ('') For String 
+
+
+
+
+Loads : Convert Json Object Into Python Dict Object
+
+Dumps : Convert Python Dict Object Into Json Object
+
+Load : Insert File --> Json File To Python File
+
+Dump : Insert File --> Python File To Json File
+
+
+
+DIR --> Display The Attributes Of Module In The Form Of List
+
+
+Modules :
+	
+	Request :
+		{
+			get()
+			post()
+			put()
+			delete()
+		} ----> File Pointer Members
+		
+	Json :
+		{
+			load()
+			loads()
+			dump()
+			dumps()
+		} ----> File Pointer Members
+
+	CSV :
+		{
+			reader()
+			writer()
+			writerow()
+		} ----> File Pointer Members
+
+
+		Rest API
+		    |
+		    |
+-----------------------------------------
+|					|
+|					|
+|					|
+JSON				       CSV
+
+
+.CSV File :
+	
+	id , name , sal
+	101,Aathithya,75000
+	102,Rahul,55000
+	103,Siva Balan,45000
+	104,Dhinesh,25000
+
+
+Exception Handling :
+	Try : This block lets you test a block of code for errors.
+
+	Except : This block lets you handle the error. ---->(keyword : alternative )
+
+	Finally : This block lets you execute code, regardless of the result of the try and except blocks.
+
+	raise : This keyword is used to raise an exception manually.
+
+
+
+Case 2 :
+
+	Invoke Rest API's Using Request Module
+
+Example :
+
+	api_url = '<Api URL Link Paste Here'
+	users = none
+	try :
+		users = requests.get(api_url)
+		users = users.json()
+	except :
+		fp = open('user.json','r')
+		users = json.load(fp)
