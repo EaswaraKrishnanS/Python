@@ -247,3 +247,42 @@ Example :
 	except :
 		fp = open('user.json','r')
 		users = json.load(fp)
+
+
+Class - 26
+
+
+Class :
+	|			
+	|			
+	|---->Variabls 
+	|	|		
+	|	|
+	|	|----Instance Variable
+	|	|
+	|	|
+	|	|----Static / Class Level
+	|	|
+	|	|
+	|	|----Local Variable
+	|
+	|
+	|---->Method 
+	|	|
+	|	|
+	|	|----Constructor Method (Constructor Is A Special Method . 
+	|	|	Constructor Method invoke Automatically Only Once , At The Time Of Object Creation .
+	|	|	We Can't Invoke Constructor Method Explicitly.
+	|	|	Prepose : To Initialize Object Value. )
+	|	|
+	|	|
+	|	|----Instance Method
+	|	|
+	|	|
+	|	|----Class Method
+	|	|
+	|	|	
+	|	|----Static Method
+
+
+
