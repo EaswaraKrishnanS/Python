@@ -286,3 +286,35 @@ Class :
 
 
 
+Python Has 35 Keyword 
+	
+	Self Is A Keyword Pointing To Current object.
+
+Python Class & Object Methods :
+	
+	To create :
+	
+	Instance Method:
+		
+		a) Inside Class Constructor --> Using Self
+
+		b) Inside Class Instance --> Using Self
+
+		c) Outside Class --> Using Object
+
+	Static Method :
+
+		a) Inside Class --> Outside Method
+
+		b) Inside Class --> Using Class Name
+
+		c) Outside Class Using Class Name
+
+
+
+
+	To Read :
+		
+		a) Inside Class --> Using Self
+
+		b) Outside Class --> Objectx
